@@ -23,7 +23,7 @@ public class QuestionScreen extends JFrame {
         "Question 2?", //Adam Adamczyk: Added placeholder question text
         "Question 3?"  //Adam Adamczyk: Added placeholder question text
     };
-    private String[] answers = new String[questions.length];
+    private String[] answers = new String[questions.length]; //Adam Adamczyk
     
     // Creating method for constructing the overall UI layout of the question screens
     
@@ -38,8 +38,8 @@ public class QuestionScreen extends JFrame {
         
         // Setting up the panel and layout
         
-        JPanel panel = new JPanel();
-        panel.setLayout(new BorderLayout());
+        JPanel panel = new JPanel(); //Adam Adamczyk
+        panel.setLayout(new BorderLayout()); //Adam Adamczyk
         
         // Creating question label
         
@@ -48,13 +48,13 @@ public class QuestionScreen extends JFrame {
         
         // Creating text field for answer
         
-        JTextField answerField = new JTextField();
+        JTextField answerField = new JTextField(); //Adam Adamczyk
         panel.add(answerField, BorderLayout.CENTER);
         
         // Creating next button
         
-        JButton nextButton = new JButton("Next");
-        nextButton.addActionListener(new ActionListener() {
+        JButton nextButton = new JButton("Next"); //Adam Adamczyk
+        nextButton.addActionListener(new ActionListener() { //Adam Adamczyk
             public void actionPerformed(ActionEvent e) {
                 answers[currentQuestionIndex] = answerField.getText(); //Adam Adamczyk: Saves user input to the answers array
                 currentQuestionIndex++; //Adam Adamczyk: Advances to the next question
