@@ -14,9 +14,9 @@ import java.awt.event.ActionListener;
 
 /**
  *
- * @author julia
+ * @author Juliana Wall
  */
-public class MainMenu extends JFrame{
+public class MainMenu extends JFrame {
     
     // creating method for constructing the overall UI layout of the main menu
     
@@ -27,7 +27,7 @@ public class MainMenu extends JFrame{
         setTitle("Personality Quiz");
         setSize(400, 300);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setLocationRelativeTo(null);
+        setLocationRelativeTo(null); 
         
         // setting up the panel and layout
         
@@ -42,11 +42,16 @@ public class MainMenu extends JFrame{
                 
                 // opening the question screen
                 
-                new QuestionScreen().setVisible(true);
-                dispose();
+                new QuestionScreen().setVisible(true); // Adam Adamczyk: Changed to directly call the constructor and make the screen visible
+                dispose(); // Adam Adamczyk: Added dispose to close the current frame after opening QuestionScreen
             }
         });
-        panel.add(startButton);
+        panel.add(startButton); 
+        
+        // adding an additional button for exiting the application
+        JButton exitButton = new JButton("Exit"); // Adam Adamczyk: Added an exit button
+        exitButton.addActionListener(e -> System.exit(0)); // Adam Adamczyk: Added action listener to exit the application
+        panel.add(exitButton); // Adam Adamczyk: Added exit button to the panel
         
         // adding the panel to the frame
         
