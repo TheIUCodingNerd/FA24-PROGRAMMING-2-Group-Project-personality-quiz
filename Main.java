@@ -29,9 +29,9 @@ public class Main {
      */
     public static void main(String[] args) {
         // Initialize the components of the quiz
-        Menu menu = new Menu();                // Handles user interface
-        QuizLogic quizLogic = new QuizLogic(); // Manages quiz questions and answers
-        ResultAnalyzer resultAnalyzer = new ResultAnalyzer(); // Analyzes user answers
+        Menu menu = new Menu();                // Handles user interface //Adam Adamczyk
+        QuizLogic quizLogic = new QuizLogic(); // Manages quiz questions and answers //Adam Adamczyk
+        ResultAnalyzer resultAnalyzer = new ResultAnalyzer(); // Analyzes user answers //Adam Adamczyk
 
         // Start the quiz application
         boolean continueRunning = true;
