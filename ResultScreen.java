@@ -38,12 +38,12 @@ public class ResultScreen extends JFrame {
         
         // setting up the panel and layout
         
-        JPanel panel = new JPanel();
-        panel.setLayout(new GridLayout(2, 1));
+        JPanel panel = new JPanel(); //Adam Adamczyk
+        panel.setLayout(new GridLayout(2, 1)); //Adam Adamczyk
         
         // creating and adding the results label (text can change depending on questions)
         
-        JLabel resultLabel = new JLabel("Your personality score is: " + score);
+        JLabel resultLabel = new JLabel("Your personality score is: " + score); //Adam Adamczyk
         panel.add(resultLabel);
         
         // adding the panel to the frame
