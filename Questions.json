@@ -1,0 +1,46 @@
+{
+  "questions": [
+    {
+      "id": 0,
+      "text": "You find a bag of gold on the street. What do you do?",
+      "answers": [
+        {
+          "text": "Turn it in to the guards.",
+          "lawChaos": -1,
+          "goodEvil": 1
+        },
+        {
+          "text": "Keep it for yourself.",
+          "lawChaos": 1,
+          "goodEvil": -1
+        },
+        {
+          "text": "Ask around to find its owner.",
+          "lawChaos": 0,
+          "goodEvil": 1
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "text": "You witness someone being extorted. How do you react?",
+      "answers": [
+        {
+          "text": "Intervene, citing local laws and threaten to get the guards.",
+          "lawChaos": -1,
+          "goodEvil": 0
+        },
+        {
+          "text": "Ignore it. It's not your business.",
+          "lawChaos": 0,
+          "goodEvil": 0
+        },
+        {
+          "text": "Sneak behind the extortionists and pickpocket them.",
+          "lawChaos": 1,
+          "goodEvil": -1
+        }
+      ]
+    }
+  ]
+}
